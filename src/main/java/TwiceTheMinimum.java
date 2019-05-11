@@ -19,12 +19,11 @@ public class TwiceTheMinimum {
             }
         }
         double min = array[0];
-        for(int i = 1; i < array.length; i++){
+        for (int i = 1; i < array.length; i++) {
             if(array[i] < min){
                 min = array[i];
             }
         }
-        System.out.println(Arrays.toString(array));
-        System.out.println(String.format("%.3g%n", min * 2));
+        System.out.printf("Value: %.2f", min * 2);
     }
 }
