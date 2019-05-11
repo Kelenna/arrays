@@ -18,7 +18,5 @@ public class IncreaseByTwo {
             }
         }
         System.out.println(Arrays.toString(array));
-
-
     }
 }
