@@ -10,7 +10,7 @@ public class NumberByThree {
         int n = sc.nextInt();
 
         double[] array = new double[n];
-        int cnt = array.length;
+        int cnt = array.length / 3;
         double sum = 0;
 
         if (n > 100 || n < 0)
@@ -18,16 +18,18 @@ public class NumberByThree {
         else {
             for (int i = 0; i < n; i++) {
                 array[i] = sc.nextDouble();
-                if (array[i] < 0)
+                if (array[i] < 0) {
                     array[i] = 0;
                     cnt--;
                 }
             }
             for (int i = 2; i < n; i = i + 3) {
-                    sum += array[i];
+                sum += array[i];
             }
             System.out.println(Arrays.toString(array));
+            System.out.println(cnt);
             System.out.println(String.format("%.3g%n", sum));
+        }
     }
 }
 
